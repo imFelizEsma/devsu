@@ -14,12 +14,13 @@ terraform {
       version = "~> 2.0"
     }
   }
-  backend "azurerm" {
-    resource_group_name  = "terraform-state-rg"
-    storage_account_name = "imfeldevsustate"
-    container_name       = "tfstate"
-    key                  = "devsu-demo.terraform.tfstate"
-  }
+  # Backend commented out for initial deployment
+  # backend "azurerm" {
+  #   resource_group_name  = "terraform-state-rg"
+  #   storage_account_name = "imfeldevsustate"
+  #   container_name       = "tfstate"
+  #   key                  = "devsu-demo.terraform.tfstate"
+  # }
 }
 
 provider "azurerm" {
