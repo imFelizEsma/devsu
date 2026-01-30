@@ -2,7 +2,7 @@ resource_group_name = "devsu-demo-prod-rg"
 location            = "East US"
 project_name        = "imfeldevsu"
 kubernetes_version  = "1.28.103"
-node_count          = 2
+node_count          = 1
 vm_size             = "Standard_DC2s_v3"
 letsencrypt_email   = "imfelizesma@outlook.com"
 
