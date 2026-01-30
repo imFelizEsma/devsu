@@ -15,9 +15,7 @@ controller:
       memory: 256Mi
 
   metrics:
-    enabled: true
-    serviceMonitor:
-      enabled: true
+    enabled: false
 
   podSecurityContext:
     runAsNonRoot: true
