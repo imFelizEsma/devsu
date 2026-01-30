@@ -263,14 +263,14 @@ npm audit
 ## 📈 Escalabilidad
 
 ### Horizontal Pod Autoscaler
-- **Min replicas**: 2
-- **Max replicas**: 10
+- **Min replicas**: 1
+- **Max replicas**: 2
 - **CPU threshold**: 70%
 - **Memory threshold**: 80%
 
 ### Cluster Autoscaler
-- **Min nodes**: 2
-- **Max nodes**: 10
+- **Min nodes**: 1
+- **Max nodes**: 3
 - **Scale up**: Aggressive
 - **Scale down**: Conservative
 
