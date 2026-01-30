@@ -253,8 +253,8 @@ npm audit
 ## 🌐 URLs de Acceso
 
 ### Producción
-- **API Endpoint**: https://devsu-demo.yourdomain.com/api/users
-- **Health Check**: https://devsu-demo.yourdomain.com/health
+- **API Endpoint**: https://devsu-demo.solvextk.com/api/users
+- **Health Check**: https://devsu-demo.solvextk.com/health
 
 ### Desarrollo
 - **Local**: http://localhost:8000/api/users
