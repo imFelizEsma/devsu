@@ -363,6 +363,12 @@ Copyright © 2023 Devsu. All rights reserved.
 **GitHub**: https://github.com/imFelizEsma/devsu  
 **Implementación**: Mejores prácticas DevSecOps completas Engineer** - Implementación de mejores prácticas DevSecOps
 
+## 📋Notas
+
+Este repositorio fue construido de manera iterativa como parte de un ejercicio técnico. 
+Durante el proceso se realizaron pruebas, ajustes y refactorizaciones hasta llegar a la solución final. 
+El estado actual del repositorio representa la configuración pensada para un entorno productivo.
+
 ---
 
 ## 📚 Documentación Adicional
