@@ -7,10 +7,10 @@ on:
     branches: [ main ]
 
 env:
-  REGISTRY: devsudemoregistry.azurecr.io
+  REGISTRY: imfeldevsuregistry.azurecr.io
   IMAGE_NAME: devsu-demo-nodejs
-  RESOURCE_GROUP: devsu-demo-rg
-  CLUSTER_NAME: devsu-demo-aks
+  RESOURCE_GROUP: devsu-demo-prod-rg
+  CLUSTER_NAME: imfeldevsu-aks
 
 jobs:
   test:
