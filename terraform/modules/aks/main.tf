@@ -4,6 +4,8 @@ resource "azurerm_kubernetes_cluster" "main" {
   resource_group_name = var.resource_group_name
   dns_prefix          = "${var.project_name}-aks"
   kubernetes_version  = var.kubernetes_version
+  sku_tier            = "Premium"
+  support_plan        = "AKSLongTermSupport"
 
   default_node_pool {
     name                = "default"
