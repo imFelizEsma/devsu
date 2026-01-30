@@ -19,7 +19,6 @@ resource "azurerm_kubernetes_cluster" "main" {
 
     upgrade_settings {
       max_surge = "0"
-      max_unavailable = "1"
     }
   }
 
