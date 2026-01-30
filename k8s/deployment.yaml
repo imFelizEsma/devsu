@@ -28,7 +28,7 @@ spec:
         fsGroup: 1001
       containers:
       - name: devsu-demo-app
-        image: devsudemoregistry.azurecr.io/devsu-demo-nodejs:IMAGE_TAG
+        image: imfeldevsuregistry.azurecr.io/devsu-demo-nodejs:IMAGE_TAG
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
