@@ -1,12 +1,28 @@
 # DevOps Demo - Node.js Application
 
-[![CI/CD Pipeline](https://github.com/your-username/devsu-demo-devops-nodejs/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/your-username/devsu-demo-devops-nodejs/actions/workflows/ci-cd.yml)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=devsu-demo-nodejs&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=devsu-demo-nodejs)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=devsu-demo-nodejs&metric=coverage)](https://sonarcloud.io/summary/new_code?id=devsu-demo-nodejs)
+[![CI/CD Pipeline](https://github.com/imFelizEsma/devsu/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/imFelizEsma/devsu/actions/workflows/ci-cd.yml)
+[![Infrastructure Pipeline](https://github.com/imFelizEsma/devsu/actions/workflows/infrastructure.yml/badge.svg)](https://github.com/imFelizEsma/devsu/actions/workflows/infrastructure.yml)
+
+## 🌐 **APLICACIÓN EN VIVO**
+
+- **🔗 URL Principal**: https://devsu-demo.solvextk.com/
+- **❤️ Health Check**: https://devsu-demo.solvextk.com/health
+- **👥 API Users**: https://devsu-demo.solvextk.com/api/users
 
 ## 📋 Descripción
 
-Esta es una aplicación Node.js RESTful API para gestión de usuarios, implementada siguiendo las mejores prácticas de DevSecOps para un entorno productivo en Azure.
+Esta es una aplicación Node.js RESTful API para gestión de usuarios, implementada siguiendo las mejores prácticas de **DevSecOps** para un entorno productivo en **Microsoft Azure**.
+
+### 🏆 **CUMPLIMIENTO DE REQUERIMIENTOS**
+
+✅ **Dockerización completa** con mejores prácticas  
+✅ **Pipeline CI/CD** con todos los pasos requeridos  
+✅ **Kubernetes production-ready** con 2+ réplicas y HPA  
+✅ **ConfigMaps, Secrets, Ingress, PVC** implementados  
+✅ **Pipeline de despliegue** automatizado  
+✅ **Infraestructura como Código** con Terraform (PUNTOS EXTRA)  
+✅ **Documentación completa** con diagramas  
+✅ **Entorno públicamente accesible** funcionando
 
 ### 🏗️ Arquitectura de la Solución
 
@@ -161,8 +177,8 @@ devsu-demo-devops-nodejs/
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/your-username/devsu-demo-devops-nodejs.git
-cd devsu-demo-devops-nodejs
+git clone https://github.com/imFelizEsma/devsu.git
+cd devsu
 
 # Desplegar infraestructura
 chmod +x scripts/deploy-infrastructure.sh
@@ -343,7 +359,9 @@ Copyright © 2023 Devsu. All rights reserved.
 
 ## 👥 Autor
 
-**DevOps Engineer** - Implementación de mejores prácticas DevSecOps
+**imFelizEsma** - DevOps Engineer  
+**GitHub**: https://github.com/imFelizEsma/devsu  
+**Implementación**: Mejores prácticas DevSecOps completas Engineer** - Implementación de mejores prácticas DevSecOps
 
 ---
 
