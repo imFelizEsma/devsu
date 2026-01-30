@@ -142,9 +142,7 @@ jobs:
     - name: Bootstrap Kubernetes (if needed)
       run: |
         chmod +x scripts/bootstrap-k8s.sh
-        if ! kubectl get namespace ingress-nginx &> /dev/null; then
-          ./scripts/bootstrap-k8s.sh
-        fi
+        ./scripts/bootstrap-k8s.sh
 
     - name: Update image in deployment
       run: |
