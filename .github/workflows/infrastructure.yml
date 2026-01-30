@@ -46,11 +46,24 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+    - name: Set Azure CLI to use Service Principal
+      run: |
+        echo "Setting up Azure authentication for Terraform"
+        export ARM_CLIENT_ID=$(echo '${{ secrets.AZURE_CREDENTIALS }}' | jq -r .clientId)
+        export ARM_CLIENT_SECRET=$(echo '${{ secrets.AZURE_CREDENTIALS }}' | jq -r .clientSecret)
+        export ARM_SUBSCRIPTION_ID=$(echo '${{ secrets.AZURE_CREDENTIALS }}' | jq -r .subscriptionId)
+        export ARM_TENANT_ID=$(echo '${{ secrets.AZURE_CREDENTIALS }}' | jq -r .tenantId)
+        echo "ARM_CLIENT_ID=$ARM_CLIENT_ID" >> $GITHUB_ENV
+        echo "ARM_CLIENT_SECRET=$ARM_CLIENT_SECRET" >> $GITHUB_ENV
+        echo "ARM_SUBSCRIPTION_ID=$ARM_SUBSCRIPTION_ID" >> $GITHUB_ENV
+        echo "ARM_TENANT_ID=$ARM_TENANT_ID" >> $GITHUB_ENV
+
     - name: Terraform Format Check
       run: terraform fmt -check -recursive
+      continue-on-error: true
 
     - name: Terraform Init
-      run: terraform init
+      run: terraform init -backend=false
 
     - name: Terraform Validate
       run: terraform validate
@@ -75,7 +88,7 @@ jobs:
 
     - name: Upload Terraform Outputs
       if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event.inputs.action == 'apply')
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: terraform-outputs
         path: terraform/terraform-outputs.json

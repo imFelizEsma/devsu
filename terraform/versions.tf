@@ -1,1 +1,0 @@
-terraform {\n  required_version = \">= 1.0\"\n  required_providers {\n    azurerm = {\n      source  = \"hashicorp/azurerm\"\n      version = \"~> 3.0\"\n    }\n  }\n}
