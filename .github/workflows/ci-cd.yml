@@ -146,9 +146,9 @@ jobs:
           ./scripts/bootstrap-k8s.sh
         fi
 
-    - name: Update image tag in deployment
+    - name: Update image in deployment
       run: |
-        sed -i 's|IMAGE_TAG|${{ github.sha }}|g' k8s/deployment.yaml
+        sed -i 's|imfeldevsuregistry.azurecr.io/devsu-demo-nodejs:IMAGE_TAG|${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}|g' k8s/deployment.yaml
 
     - name: Deploy to AKS
       run: |
